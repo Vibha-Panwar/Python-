@@ -2,8 +2,7 @@
 
 # Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
 
-a = int(input("enter a integer :"))
-n1 = int("%s" % a)
-n2 = int("%s%s" %(a,a))
-n3 = int("%s%s%s"%(a,a,a))
-print(n1+n2+n3)
+n = int(input("Enter a digit:"))
+for i in range(0,5):
+    print("itration no.",i,"and value is",n)
+    n=n*n
