@@ -3,6 +3,11 @@
 # Write a Python program to print the calendar of a given month and year.
 
 import calendar
-y = int(input("Enter the year :"))
-m = int(input("Enter the month :"))
+
+input_string = input("Enter the month and year in mm/yyyy format :")
+date = input_string.split("/")
+m = int(date[0])
+y = int(date[-1])
+
+print("printing calendar for the month",m,"and year",y)
 print(calendar.month(y,m))
