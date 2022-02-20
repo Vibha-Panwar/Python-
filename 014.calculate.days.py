@@ -3,7 +3,14 @@
 # Write a Python program to calculate number of days between two dates.
 
 from datetime import date 
-first_date = date(2022,3,10)
-last_date = date(2022,3,28)
-alpha = last_date - first_date 
-print(alpha.days)
+one = input("Enter first date in DD/MM/YYYY format :\n")
+two = input("Enter second date in DD/MM/YYYY format :\n")
+
+date1 = one.split("/")
+date2 = two.split("/")
+
+f_date = date(int(date1[-1]),int(date1[1]),int(date1[0]))
+l_date = date(int(date2[-1]),int(date2[1]),int(date2[0]))
+
+delta = l_date - f_date
+print("delta days :",delta.days)
