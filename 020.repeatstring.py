@@ -2,12 +2,10 @@
 
 # Write a Python program to get a string which is n (non-negative integer) copies of a given string
 
-def larger_string(str , n):
-    result = ""
-    for i in range(n):
-        result = result + str
-    return result
+string = input("Enter your string :\t")
+times = int(input("How many times you want to repeat : \t"))
+result = ""
+for i in range(times):
+    result = result + string
 
-
-print(larger_string('abc',2))
-print(larger_string('vibha',3))
+print("New string : \n",result)
