@@ -2,8 +2,11 @@
 
 # Write a Python program to test whether a passed letter is a vowel or not
 
-def w_vowel(char):
-    all_vowels = 'aeiou'
-    return char in all_vowels
-print(w_vowel('c'))
-print(w_vowel('e'))
+print("!!!!Vowels Verifier!!!!\t\n")
+letter = input("Enter one character:")
+
+def vowel_verify(letter):
+    all_vowels ='aeiouAEIOU'
+    return letter in all_vowels
+
+print("Is your character vowel?",vowel_verify(letter))
