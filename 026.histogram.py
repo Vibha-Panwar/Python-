@@ -2,13 +2,11 @@
 
 # Write a Python program to create a histogram from a given list of integers.
 
-def histogram(items):
-    for n in items:
-        output = ''
-        times = n
-        while(times > 0):
-            output = output + '@'
-            times = times - 1
-        print(output)
+string = input("Enter your integer string:\n")
+def convert(string):
+    list1 = []
+    list1[:0] = string
+    return list1
 
-histogram([2,3,4,5,6])
+list2 = convert(string)
+print("your list :",list2)
