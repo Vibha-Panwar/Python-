@@ -8,4 +8,11 @@ def concatenate_list_data(list):
         result += str(element)
     return result
 
-print(concatenate_list_data([1,3,1997]))
+print("Enter your list :\n")
+list1 = input("->\t")
+
+print("Input veriable is:",type(list1))
+print("User can not give input in list type.")
+print("Giving list as input in program hardcoded.")
+
+print(concatenate_list_data(["V","I","B","H","A"]))
