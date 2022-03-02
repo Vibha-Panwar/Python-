@@ -2,8 +2,7 @@
 
 # Write a Python program that will accept the base and height of a triangle and compute the area.
 
-b = int(input("Enter the value of base :"))
-h = int(input("Enter the value of hight :"))
-area = b*h/2
+b = float(input("Enter base in cm :\n"))
+h = float(input("Enter hight in cm :\n"))
 
-print("area =",area)
+print("Area of triangle:",b*h/2)
