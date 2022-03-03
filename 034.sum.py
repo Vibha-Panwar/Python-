@@ -9,6 +9,8 @@ def sum(x,y):
     else:
         return sum
 
-print(sum(10,6))
-print(sum(5,6))
-print(sum(8,7))
+n1 = int(input("Enter your first number :\n"))
+n2 = int(input("Enter your second number :\n"))
+
+print(f"sum of {n1} and {n2} is :\n")
+print(sum(n1,n2))
