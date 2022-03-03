@@ -10,6 +10,9 @@ def sum(x, y, z):
         sum = x + y + z
     return sum
 
-print(sum(2,3,4))
-print(sum(1,1,1))
-print(sum(12,12,13))
+n1 = int(input("Enter your first number :\n"))
+n2 = int(input("Enter your second number :\n"))
+n3 = int(input("Enter your thired number :\n"))
+
+print(f"sum of {n1} and {n2} and {n3} is :\n")
+print(sum(n1,n2,n3))
