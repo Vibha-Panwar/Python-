@@ -7,7 +7,6 @@ def test_number5(x , y):
         return True
     else:
         return False
-
 print(test_number5(7,2))
 print(test_number5(3,2))
 print(test_number5(2,2))
