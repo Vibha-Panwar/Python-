@@ -1,0 +1,5 @@
+Hello !!!!!!
+We are going to learn copying the data from one file to another one.
+So, I am writing some data in this file.
+then will copy it.
+ 
