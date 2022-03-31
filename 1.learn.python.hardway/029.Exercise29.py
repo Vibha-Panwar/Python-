@@ -1,6 +1,6 @@
-people = 20
-cats = 30
-dogs = 15
+people = 30
+cats = 40
+dogs = 20
 
 if people < cats:
     print("Too many cats , We are doomed!")
