@@ -1,4 +1,4 @@
-the_count = [1 ,2 ,3 ,4 ,5 ]
+the_count = [1,2,3,4,5]
 fruits = ["apple","oranges","peachs","mangoes"]
 change = [1,"millions",2,"billions",3,"trillions"]
 
