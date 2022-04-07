@@ -17,7 +17,7 @@ def ghost_room():
 def bear_room():
     print("Here is a big fat bear.")
     print("How are you going to move that bear from another door so that you can left that room alive???")
-
+    
     choice = input("> ")
 
     if choice == "stand like a statue.":
