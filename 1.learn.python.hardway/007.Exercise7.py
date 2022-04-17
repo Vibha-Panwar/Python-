@@ -1,8 +1,3 @@
-from ctypes.wintypes import HACCEL
-from re import A, I, T, U
-from tkinter import E, N, Y
-
-
 print("Mary has a little lumb.")
 print("It's fleece is white as {}.".format('snow'))
 print("and goes everywhere Mary goes.")
