@@ -61,3 +61,39 @@ print(val.isnumeric())
 if val.isdecimal():
     num = int(val)
     print(num)
+# convert string to integer.
+a = "23"
+print(a)
+print(type(a))
+
+b = int(a)
+print(b)
+print(type(b))
+# Converting float to integer.
+a = 2.3
+print(type(a))
+print(a)
+b = int(2.3)
+print(type(b))
+print(b)
+
+a ="2.3"
+print(type(a))
+print(a)
+#b = int(a)
+#print(b)
+#print(type(b))
+
+a = "2.1"
+b = float(a)
+c = int(b)
+print(c)
+print(type(a))
+print(type(b))
+print(type(c))
+d = int(float(a))
+print(d)
+print(type(d))
+print(int(float(2.1)))
+print(int(float("2")))
+print(int(float(2)))
