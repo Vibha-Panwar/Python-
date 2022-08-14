@@ -97,3 +97,35 @@ print(type(d))
 print(int(float(2.1)))
 print(int(float("2")))
 print(int(float(2)))
+
+# Conditionals - If
+def main():
+    expected_answer = "42"
+    vib = input("What is the answer?")
+    if vib == expected_answer:
+        print("Welcome to the cabal!")
+main()
+
+#Conditionals: if-else
+def main():
+    a = input('First Number: ')
+    b = input('Second Number: ')
+    if int(b) == 0:
+        print("cannot divide by 0.")
+    else:
+        print("Dividing",a,"by",b)
+        print(int(a)/int(b))
+main()
+
+# Conditionals: else if
+def main():
+    a = input('First Number: ')
+    b = input('Second Number: ')
+    if a == b:
+        print("They are equal.")
+    else:
+        if int(a) < int(b):
+            print(a + 'is smaller then ' + b)
+        else:
+            print(a + 'is bigger then ' + b)
+main()
