@@ -129,3 +129,16 @@ def main():
         else:
             print(a + 'is bigger then ' + b)
 main()
+
+# Conditionals: elif
+def main():
+    a = input("First Number: ")
+    b = input("Second Number: ")
+    if a == b:
+        print("They are equal.")
+    elif int(a) < int(b):
+        print(a + 'is smaller than' + b)
+    else:
+        print(a + 'is bigger than' + b)
+main()
+
