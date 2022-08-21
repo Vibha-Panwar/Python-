@@ -101,3 +101,44 @@ print(text.index("c"))
 print(text.index("c",13))
 print(text.index("be",15))
 print(text.index("re",29))
+
+# rindex in string with range
+text = "The black cat climbed the green tree."
+print(text.rindex("c"))
+print(text.rindex("c",10))
+print(text.rindex("c",3,15))
+# rindex find the last occurrence of the specified value.
+# string.rindex(value,start,stop)
+
+# Find in string.
+text = "The black dog is running behind a red car."
+print(text.find("bl"))
+print(text.find("car"))
+print(text.find("cat"))
+print(text.find("d"))
+print(text.find("b",8))
+print(text.find("re",10))
+print(text.find("is",15,25))
+# find function is similar to the rindex.It is also give you the last occurrence of specified value.
+# The only difference is that if find function couldn't find the value then it will give the output as(-1) and rindex show an error in output.
+
+# In string. -> checking a substring is in the string or not?
+txt = "hello world"
+if "wo" in txt:
+    print('found wo')
+if "x" in txt:
+    print('found x')
+else:
+    print('Not found x')
+
+# index if in string
+sub = "cat"
+txt = "The black cat climbed the gree tree."
+if sub in txt:
+    loc = txt.index(sub)
+    print(sub + 'is at' + str(loc))
+sub = "dog"
+if sub in txt:
+    loc = txt.index(sub)
+    print(sub + "is at" + str(loc))
+    
