@@ -36,4 +36,70 @@ for entry in data:
     print("{:<4}|{:>3}".format(entry[0], entry[1]))
 
 # Example using format - alignment
+txt = "Some random text"
+print("'{}'".format(txt))
+print("'{:20}'".format(txt))
+print("'{:<20}'".format(txt))
+print("'{:>20}'".format(txt))
+print("'{:^20}'".format(txt))
 
+# format string
+name  = "Txt group"
+print("{:s}".format(name))
+print("{}".format(name))
+
+# Format characters and types
+Q = 23
+print("{:b}".format(Q))
+print("{:c}".format(Q))
+print("{:d}".format(Q))
+print("{:o}".format(Q))
+print("{:x}".format(Q))
+print("{:n}".format(Q))
+print("{}".format(Q))
+
+# Format floating point number
+x = 412.345678901
+print("{:e}".format(x)) # exponent
+print("{:E}".format(x)) # Exponent
+print("{:f}".format(x)) # fixed point
+print("{:.2f}".format(x)) # fixed point(only 2 point after decimal)
+print("{:F}".format(x)) # same as f
+print("{:g}".format(x)) # generic: only 3 points after decimal
+print("{:G}".format(x)) # same as g
+print("{:n}".format(x)) # number: same as generic
+print("{}".format(x))
+
+# f-strings(format string literals)
+name = "KTHV"
+age = 27
+pi = 3.141592653589793
+r = 2
+print(f"The user {name} was born {age} years ago.")
+print(f"The user {name:10} was born {age} years ago.")
+print(f"The user {name:>10} was born {age} years ago.")
+print(f"The user {name:>10} was born {age:>10} years ago.")
+print(f"PI is {pi:.3}.")
+print(f"PI is '{pi:.3f}'.")
+print(f"Area is {pi*r**2}")
+print(f"Area is {pi*r**2:.3f}")
+
+# print using old %- syntex (????????????)
+# Format braces, brackets and parentheses
+
+print("{{{}}}".format(42))
+print("{{ {} }}".format(42))
+print("[{}] ({})".format(42,42))
+print("%{}".format(42))
+
+# Example - using format with attributes of objects
+
+import sys
+print("{0.executable}".format(sys))
+print("{system.argv[0]}".format(system = sys))
+
+# raw f-string
+name = "foofoo"
+print(r"a\nb {name}")
+print(rf"a\nb {name}")
+print(fr"a\nb {name}")
