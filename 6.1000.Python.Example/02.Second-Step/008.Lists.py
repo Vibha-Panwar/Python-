@@ -86,3 +86,16 @@ y = deepcopy(x)
 x[0] = 'qwe'
 print(x)
 print(y)
+
+# Join Function --> join method takes all the items of a list, tuple and joins them into a string.
+
+fields = ['one','two and three','four','five']
+together = ' : '.join(fields)
+print(together)
+mixed = '-=<> '.join(fields)
+print(mixed)
+another = ' '.join(fields)
+print(another)
+
+# join list of numbers
+a = ['x','y','2']
