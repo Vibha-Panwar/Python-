@@ -178,3 +178,17 @@ print(names)
 while 'kim' in names:
     names.remove('kim')
 print(names)
+
+# remove element by index[].pop function --> It is a simple method don't feel it is hard to understand.
+# just give specific value to pop function and it will delete it.
+
+planets = ['mercury','venus','earth','mars','jupiter']
+print(planets)
+third = planets.pop(2)
+print(third)
+print(planets)
+second = planets.pop(0)
+print(planets)
+last = planets.pop()
+print(last)
+print(planets)
