@@ -98,4 +98,83 @@ another = ' '.join(fields)
 print(another)
 
 # join list of numbers
-a = ['x','y','2']
+
+
+
+# Split Function:
+# *Special Case :--> To split a string to its characters: Use the list() function.
+
+words = "ab:cd:ef:gh"
+wor_split = words.split(':')
+print(wor_split)
+
+# Split by space.
+names = "bheem   chutki   Dholu  Bholu  indumati"
+naam = names.split( )
+print(naam)
+
+# split to characters
+chars = list("indu dholu")
+print(chars)
+
+# re.split() --> ??
+
+# for loop on lists:
+things = ['apple','banana','peach',23]
+for peach in things:
+    print(peach)
+
+# in list
+words = ['apple','banana','peach','42']
+if 'apple' in words:
+    print('found apple')
+if 'a' in words:
+    print("found a")
+else:
+    print("NOT found a")
+if 42 in words:
+    print("found 42")
+else:
+    print("NOT found 42")
+
+# Where is the element in the list
+words = ['cat','dog','bee','bug','rat','owl']
+print(words.index("rat"))
+print(words.index("dog"))
+
+# index improved
+words = ['cat','dog','owl','bee']
+name = 'owl'
+if name in words:
+    print(words.index(name))
+name = 'python'
+if name in words:
+    print(words.index(name))
+
+# [].insert function: --> This function is used to insert specific value at the specific place.
+# list.insert(positiion,element) ; element could be any string, number, object.
+words = ['apple','banana','carrot','dragon']
+print(words)
+words.insert(2,'zebra')
+print(words)
+words.insert(0,20)
+print(words)
+
+# [].append function --> This method is also used to add add new item in the list but that element will always add at the end of the list.
+# list.append(element)
+names = ['fofo','fifi','bumbalbi','magnito','kim']
+print(names)
+names.append("KTH")
+print(names)
+
+# [].remove function -->It used to remove element from the list but it will remove first entry of the given element.
+# If there is another same element then it will remain same. If you want to remove all the given element to remove then you have use loop function.
+names = ['fofo','fifi','bumbalbi','magnito','kim']
+print(names)
+print(names.remove('kim'))
+print(names)
+names = ['fofo','fifi','bumbalbi','kim','magnito','kim']
+print(names)
+while 'kim' in names:
+    names.remove('kim')
+print(names)
