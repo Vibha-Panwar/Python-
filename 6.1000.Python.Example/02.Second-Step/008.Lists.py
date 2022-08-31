@@ -98,7 +98,14 @@ another = ' '.join(fields)
 print(another)
 
 # join list of numbers
-
+a = ['x','2','y']
+b = ['x',2,'y']
+print(":".join(a))
+# print(":".join(b))
+print(":".join(map(str,b)))
+# map() :--> map function give us output after appling the  given function on given variable.
+# map(functionwhich you want to apply,variable on which function will apply) 
+print(":".join(str(xyz) for xyz in b))
 
 
 # Split Function:
@@ -121,8 +128,9 @@ print(chars)
 
 # for loop on lists:
 things = ['apple','banana','peach',23]
-for peach in things:
-    print(peach)
+for var in things:
+    print(var)
+# here var means variable means anything which is present in things will be printed.
 
 # in list
 words = ['apple','banana','peach','42']
@@ -192,3 +200,19 @@ print(planets)
 last = planets.pop()
 print(last)
 print(planets)
+
+# Remove several elements of list by index :-->
+names = ['fofo','fifi','baz','moo','mua','qux']
+names[2:4] = []
+print(names)
+
+# Use list as a Queue :-->
+a_queue = []
+print(a_queue)
+a_queue.append('Moo')
+print(a_queue)
+a_queue.insert(0,'zebra')
+print(a_queue)
+first = a_queue.pop(0)
+print(first)
+print(a_queue)
