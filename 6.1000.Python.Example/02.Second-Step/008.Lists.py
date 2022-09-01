@@ -247,4 +247,27 @@ print(queue)
 # Here note one thing -- when we give maxlength to deque and append a lot of number
 # or string in the list then deque will contain only the latest one. It will leave the elements from the left side of the list.
 
+# List as a stack
+stack = []
+stack.append("Joe")
+print(stack)
+stack.append("Jane")
+print(stack)
+stack.append("Bob")
+print(stack)
+while stack:
+    name = stack.pop()
+    print(name)
+    print(stack)
+
+# Stack with deque
+from collections import deque
+stack = deque()
+stack.append("Joe")
+stack.append("Jane")
+stack.append("Bob")
+while stack:
+    name = stack.pop()
+    print(name)
+    print(stack)
 
