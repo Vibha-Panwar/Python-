@@ -216,3 +216,35 @@ print(a_queue)
 first = a_queue.pop(0)
 print(first)
 print(a_queue)
+
+#Queue using deque from collections
+from collections import deque
+items = deque(['fofo','fifi'])
+print(type(items))
+print(items)
+items.append('zozo')
+print(items)
+print(len(items))
+items.append('coco')
+print(items)
+
+txt = items.popleft()
+print(txt)
+print(items)
+print(len(items))
+
+# Fixed size queue:- means giving the max length of the deque.
+from collections import deque
+queue = deque([],maxlen = 3)
+print(len(queue))
+print(queue.maxlen)
+queue.append("Foo")
+queue.append("Bar")
+queue.append("Baz")
+print(queue)
+queue.append("Zoo")
+print(queue)
+# Here note one thing -- when we give maxlength to deque and append a lot of number
+# or string in the list then deque will contain only the latest one. It will leave the elements from the left side of the list.
+
+
