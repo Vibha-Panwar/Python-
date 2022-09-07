@@ -177,4 +177,50 @@ planets = ['mercury','venus','earth','mars','jupiter','saturn']
 for idx, planet in enumerate(planets):
     print(idx,planet)
 
+# List Operators :-->
+a = ['One','Two']
+b = ['Three']
+print(a)
+print(a*2)
+print(a+b)
 
+# List of Lists :-->
+x = ['abc','def']
+print(x)
+y = [x, 'xyz']
+print(y)
+print(y[0])
+print(x[0])
+print(y[0][0])
+
+# list assignment :-->
+x,y = 1,2
+print(x)
+print(y)
+x,y = y,x
+print(x)
+print(y)
+
+# Tuple :--> A Tuple is a fixed-length immutable list. It can't change its size.
+# A Tuple is denoted with parentheses.
+#  List :--> elements of a list can be changed   via their indexor slice notation.
+# A list can be grow or shrink using append  and pop methods and using slice notation.
+
+
+# Exercise : colour section menu
+#  Write a script that will display a menu (a list of numbers and the corresponding color) and prompts the user for a number.
+# make sure the system is user-proof and it won’t blow up on various incorrect input values. (e.g Floating point number.
+# Number that is out of range, non-number)
+#  the user to provide the name of the color on the command line: python color.py yellow.
+#  Can you handle color names that are not in the expected case (e.g. YelloW)?
+colours = ['blue','yellow','black','purple']
+for ix in range(len(colours)):
+    print("{} {}".format(ix+1, colours[ix]))
+
+selection = input("Select one colour : ")
+if not selection.isdecimal():
+    exit(f"We need a number between 1 and {len(colours)}")
+if int(selection) < 1 or int(selection) > len(colours):
+    exit(f"The number must be in between 1 and {len(colours)}")
+col = int(selection) - 1
+print(colours[col])
