@@ -127,6 +127,59 @@ print(user)
 # List of Dictionaries :-->
 people = [
     {
-        
+        'name': 'Foo Bar',
+        'email': 'foo@example.com',
+    },
+    {
+      'name': 'Qux Bar',
+      'email': 'qux@example.com',
+      'address': 'Any, Country',
+      'Children': [
+        'Alpha',
+        'Beta',
+      ]  
     }
 ]
+print(people)
+print(people[0]['name'])
+print(people[1]['Children'][0])
+
+# Shared Dictionary :-->
+people = [
+    {
+        "name": "Fofo",
+        "id": "1",
+    },
+    {
+        "name": "Bar",
+        "id": "2",
+    },
+    {
+        "name": "Moo",
+        "id": "3",
+    }
+]
+by_name = {}
+by_id = {}
+for p in people:
+    by_name[p['name']] = p
+    by_id[p['id']] = p
+print(by_name)
+print(by_id)
+
+print(by_name["Fofo"])
+by_name["Fofo"]['email'] = 'fofo@example.com'
+print(by_name['Fofo'])
+print(by_id["1"])
+
+#immutable numbers: numbers as dictionary key :-->
+number = {
+    23 : "Twenty Three",
+    17 : "Seventeen",
+    3.14 : "Three dot Fourteen",
+    42 : "Fourty Two"
+}
+
+print(number)
+print(number[17])
+print(number.values( ))
