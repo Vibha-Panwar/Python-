@@ -1,0 +1,64 @@
+# Open and read file :-->
+
+### Printing  File Lines ###
+
+filename = 'D:\\Example\\numbers.txt'
+with open(filename, 'r') as fh:
+    for line in fh:
+        print(line)
+
+
+# Filename on the command Line :-->
+import sys
+def main():
+    if len(sys.argv) != 2:
+        exit("usage : " + sys.argv[0] + " Filename ")
+    filename = sys.argv[1]
+    with open(filename) as fh:
+        print("Working on the file", filename)
+        for line in fh:
+            print(line)
+main()
+
+
+# Filehandle with or without :-->
+filename = 'D:\\Example\\numbers.txt'
+fh = open(filename, 'r')
+print(fh)
+data = fh.read()
+fh.close()
+print(fh)
+
+with open(filename, 'r') as fh:
+    print(fh)
+    data = fh.read()
+print(fh)
+
+
+## Filehandle with return :-->
+import sys
+def process_file(filename):
+    with open(filename, 'r')as fh:
+
+        for line in fh:
+            line = line.rstrip("\n")
+            if len(line) > 0:
+                if line[0] == "#":
+                    return
+
+            if len(line) > 1:
+                if line[0:2] == "//":
+                    return
+            print(line)
+process_file(sys.argv[1])
+
+
+
+# Read all the lines into a list :-->
+filename = 'D:\\Example\\numbers.txt'
+with open(filename, 'r') as fh:
+    lines_list = fh.readlines()
+print(lines_list) 
+print(len(lines_list))
+for line in lines_list:
+    print(line)
