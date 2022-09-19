@@ -1,5 +1,5 @@
 # Open and read file :-->
-
+"""
 ### Printing  File Lines ###
 
 filename = 'D:\\Example\\numbers.txt'
@@ -62,3 +62,25 @@ print(lines_list)
 print(len(lines_list))
 for line in lines_list:
     print(line)
+
+## Read all the characters into a string(slurp):-->
+filename = "D:\\Example\\numbers.txt"
+with open(filename, 'r') as fh:
+    lines_str = fh.read()
+print(lines_str)
+print(len(lines_str))
+"""
+
+## Open file exception handling :-->
+filename = 'D:\\Example\\numbers.1.txt'
+try:
+    with open (filename,'r') as fh:
+        lines = fh.read()
+except Exception as err:
+    print('There was some error in the file operations.')
+    print(err)
+    print(type(err).__name__)
+
+print("Still running.")
+
+##Open many files -exception handling :-->
