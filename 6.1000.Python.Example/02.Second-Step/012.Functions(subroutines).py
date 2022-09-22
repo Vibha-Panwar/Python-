@@ -54,7 +54,7 @@ sendmail(
     To = 'sdgh.com',
     'sdfsgdgg.com',
 )
-"""
+
 ## Default Values :-->
 def prompt(question, retry=3):
     while retry > 0:
@@ -65,3 +65,30 @@ def prompt(question, retry=3):
     return False
 print(prompt("Type in your password"))
 print(prompt("Type in your password", 1))
+
+### Several defauls, using names :-->
+# The parameter  with default value must come at the end of the parameter declartion.
+def f(a, b=2, c=3):
+    print(a, b, c)
+f(1)
+f(1, b=0)
+f(1, c=5)
+f(1, c=5, b=0)
+# f(b=0, 1)
+
+## Arbitrary number of arguments :-->
+def mysum(*numbers):
+    print(numbers)
+    total = 0
+    for s in numbers:
+        total += s
+    return total
+print(mysum(1))
+print(mysum(1,2))
+print(mysum(1,2,4,5))
+x = [2, 3, 4, 5]
+print(mysum(*x))
+"""
+### Fixed parameters befor the others :-->
+
+

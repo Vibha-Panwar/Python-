@@ -70,7 +70,7 @@ with open(filename, 'r') as fh:
 print(lines_str)
 print(len(lines_str))
 """
-
+"""
 ## Open file exception handling :-->
 filename = 'D:\\Example\\numbers.1.txt'
 try:
@@ -82,5 +82,22 @@ except Exception as err:
     print(type(err).__name__)
 
 print("Still running.")
+"""
 
-##Open many files -exception handling :-->
+## Open many files -exception handling :-->
+import sys
+def main():
+    for filename in sys.argv[1:]:
+        try:
+            with open (filename) as fh:
+                total = 0
+                count = 0
+                for line in fh:
+                    number = float(line)
+                    total += number
+                    count += 1
+                print("Average:", total/count)
+        except Exception:
+            print("trouble with {} ".format (filename))
+
+main ()
