@@ -2,8 +2,8 @@
 # Write a Python program to display your details like name, age, address in three different lines.
 
 def Personal_Details():
-    Name,Age = "Vibha" , 25
-    Address = "Muzaffarnagar, India "
+    Name,Age = "PREAL" , 55
+    Address = "Countryside, World "
     print("Name:{}\n Age:{}\n Address:{}".format(Name,Age,Address))
 
 Personal_Details ()
