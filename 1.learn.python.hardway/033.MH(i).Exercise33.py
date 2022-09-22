@@ -4,7 +4,7 @@ count = 0
 
 while count < 5:
     count += 1
-    print(" Vibha,You are Beautifull !!!")
+    print(" BUBA,You are Beautifull !!!")
 
 X = 2
 Counting = []

@@ -1,17 +1,16 @@
 # In this program , We will notice some symboles and try to figure them out what they do.
 # just give it a shot.
 
-Black_cat = "\tIt is Suga's fan."
-Golden_cat = "\n\tIt is Jimin's fan."
-Tata = "It represent \ Taehyung \ in B12 World."
+Black_cat = "\tIt is A's fan."
+Golden_cat = "\n\tIt is B's fan."
+Tata = "It represent \ C \ in B12 World."
 
 Cola = """
-It is the leader of the group So it isits duty to allot work to everyone.
+It is the leader of the group So it is its duty to allot work to everyone.
 To Do List:-
-\t* Write a post on my blog.
-\t* Do 3 Python Program
-\t* attend the Class
-\t* Revise today's class\n\t* Do some yoga & exercise
+\t* Write a poem.
+\t* make a music tune.
+\t* give a treat to everyone.
  """
 
 print(Black_cat)

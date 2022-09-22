@@ -1,6 +1,6 @@
 numbers = [1,2,3,4,5,6,7,8,9]
-Names = ['Vibha','Varsha','Jyoti']
-Nike_Names = ['Chimmy','Sunshine','Taetae','Koo','W.W.W.','Namjoonie','Savage-King']
+Names = ['BUBA','PRINCESS','PREAL']
+Nike_Names = ['Chimmy','Sunshine','Taetae','Koo','W.W.W.','joonie','Savage-King']
 
 for number in numbers:
     print(f"The number is {numbers}")

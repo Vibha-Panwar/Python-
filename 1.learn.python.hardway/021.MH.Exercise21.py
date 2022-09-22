@@ -15,9 +15,9 @@ def module(a,b):
     return a%b
 
 print("Let's do some math with the functions we defined above.")
-Age = add(15,10)
-weight = subtract(85,10)
-height = multiply(83,2)
+Age = add(10,10)
+weight = subtract(70,10)
+height = multiply(83,5)
 IQ = module(200,3)
 print(f"Age: {Age},weight: {weight}, height: {height} and IQ: {IQ}")
 

@@ -1,8 +1,8 @@
 
-my_name = 'Vibha Panwar'
-my_age = 25
-my_height = 166 # centimeters
-my_weight = 75 # kg
+my_name = 'Buba'
+my_age = 15
+my_height = 146 # centimeters
+my_weight = 55 # kg
 my_eyes = 'black'
 my_teeth = 'white'
 my_hair = 'black'

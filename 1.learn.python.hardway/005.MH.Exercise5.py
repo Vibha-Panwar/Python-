@@ -1,7 +1,7 @@
 # In this exercise we try out f-string function which we used in last program without knowing.
 # that's a mistake of mine. No problem !! we will use this function here again.
 
-print("here, I will talk about my mom's weight and hight.")
+print("here, I will talk about MY NEIGHBOUR'S weight and hight.")
 Height = 165 # centimeter
 Weight = 80 # kilogram
 

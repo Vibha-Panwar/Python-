@@ -11,7 +11,7 @@ def print_one(arg1):
 def print_none():
     print("I have nothing.")
 
-print_two("Vibha" , "Panwar")
-print_two_again("Vibha","Panwar")
-print_one("MZNhacker")
+print_two("fofo" ,"bar")
+print_two_again("fifi","bar")
+print_one("Anything")
 print_none()

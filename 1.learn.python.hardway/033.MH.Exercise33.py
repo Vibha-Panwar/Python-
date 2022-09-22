@@ -1,5 +1,5 @@
 # In this exercise I will use while function and append() function.
-# while function is  little bit tough for me. still going to try it.
+# while function is a little bit hard to understand for me. still going to try it.
 
 i = 1990
 Years = []
