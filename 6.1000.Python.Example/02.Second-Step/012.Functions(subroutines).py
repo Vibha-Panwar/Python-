@@ -88,7 +88,46 @@ print(mysum(1,2))
 print(mysum(1,2,4,5))
 x = [2, 3, 4, 5]
 print(mysum(*x))
-"""
+
 ### Fixed parameters befor the others :-->
+def mysum(op, *numbers):
+    print(numbers)
+    if op == '+':
+        total = 0
+    elif op == '*':
+        total = 1
+    else:
+        raise Exception('invalid operator {}'.format(op))
+
+    for s in numbers:
+        if op == '+':
+            total += s
+        elif op == '*':
+            total *= s
+    return total
+print(mysum('+',1))
+print(mysum('+',1,2))
+print(mysum('*',3,4,5))
+print(mysum('+',3,4,7,8))
+print(mysum('%',2,4))
+
+### Arbitrary key-value paris in parameters :-->
+def f(**kw):
+    print(kw)
+f(a=23, b=12)
+
+### Extra key-value pairs in parameters :-->
+def f(name, **kw):
+    print(name)
+    print(kw)
+f(name="Fofo",a=2, b=4)
 
 
+## Every parameter option :-->
+def f(op, count = 0, *things, **kw):
+    print(op)
+    print(count)
+    print(things)
+    print(kw)
+f('+',3,4,6,5,a=23,b=34)
+"""
