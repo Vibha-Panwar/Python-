@@ -4,7 +4,7 @@
 # closed parentheses is followed by a colon ":".Then the body of the function is indented to the right.
 # The depth of indentation does not matter but it must be the same for all the lines of the function.
 # When we stop the indentation and start a new expression on the first column, that’s what tells Python that the function defintion has ended.
-"""
+
 def add(x, y):
     z= x + y
     return z
@@ -38,8 +38,8 @@ sendmail(
     From = 'gaasdf',
     To = 'fdfgafg',
 )
-"""
-"""
+
+
 ## Mixed positional and named parameter :--> We can not mix them, choose either one.
 def sendmail(From, To, Subject, Content):
     print('From', From)
@@ -52,7 +52,7 @@ sendmail(
     Subject = 'dfgadaf',
     Content = 'bdrytjry',
     To = 'sdgh.com',
-    'sdfsgdgg.com',
+    From ='sdfsgdgg.com',
 )
 
 ## Default Values :-->
@@ -130,4 +130,126 @@ def f(op, count = 0, *things, **kw):
     print(things)
     print(kw)
 f('+',3,4,6,5,a=23,b=34)
-"""
+
+## Duplicate declaration of functions (multiple signatures):-->
+def add(x, y):
+    return x*y
+print(add(2, 3))
+def add(x):
+    return x+x
+print(add(3))
+# print(add(2,3)) # add() takes 1 positional argument but 2 were given.
+
+### Recursive factorial :-->
+def f(n):
+    if n == 0:
+        return 1
+    return n * f(n-1)
+print(f(1))
+print(f(0))
+print(f(5))
+print(f(10))
+
+### Recursive Fibonacci :-->
+# In mathematical terms, the sequence Fn of Fibonacci numbers is defined by the recurrence relation 
+#  Fn = Fn-1 + Fn-2
+def fib(n):
+    if n == 1:
+        return 1
+    if n == 2:
+        return 1
+    return fib(n-1)+fib(n-2)
+print(fib(3))
+print(fib(9))
+
+### Non- Recursive Fibonacci :-->
+def fib(m):
+    if m == 1:
+        return [1]
+    if m == 2:
+        return [1, 1]
+    fibs = [1, 1]
+    for i in range(2, m):
+        fibs.append(fibs[-1] + fibs[-2])
+    return fibs
+print(fib(1))
+print(fib(2))
+print(fib(3))
+print(fib(4))
+print(fib(9))
+
+### unbound Recursion :-->
+
+
+
+### Variable Assignment and change - immutable :--> immutable because tuple can't be changed.
+a = 23
+b = a
+print(a)
+print(b)
+a = 1
+print(a)
+print(b)
+a = (1, 2)
+b =a
+print(a)
+print(b)
+a =(3, 4, 5)
+print(a)
+print(b)
+
+
+### Variable assignment and change - Mutable :--> Mutable because list can be changed.
+a = [2, 3, 5]
+b = a
+print(a)
+print(b)
+a[0] = 1
+print(a)
+print(b) # If we change the list in 'a', it will change the list connected to 'b' as well.
+a = {'name':'Fofo'}
+b = a
+print(a)
+print(b)
+a['name'] = 'Red Princess'
+print(a)
+print(b)
+
+### Parameter passing of functions :-->
+x = 3
+def add(n):
+    n += 1
+    return n
+print(x)
+print(add(x))
+print(x)
+
+### Passing References :-->
+numbers = [1, 2, 3]
+def update(x):
+    x[0] = 23
+def change(y):
+    y = [5, 6]
+    return y
+print(numbers)
+update(numbers)
+print(numbers)
+print(change(numbers))
+print(numbers)
+
+### Function documentation :-->
+
+
+
+### Sum ARGV :-->
+
+import sys
+def mysum(*numbers):
+    print(numbers)
+    total = 0
+    for s in numbers:
+        total += s
+    return total
+v = [int(x) for x in sys.argv[1:]]
+r = mysum(*v)
+print(r)
