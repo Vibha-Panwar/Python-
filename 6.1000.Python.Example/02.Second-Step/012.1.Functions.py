@@ -36,7 +36,7 @@ print("Sum of b: {} average of b: {}".format(total_b, avg_b))
 
 total_c, avg_c = calc(c)
 print("Sum of c: {} average of c: {}".format(total_c, avg_c))
-"""
+
 ### Copy paste code further improvement :-->
 data = {
     'a' : [2, 3, 54, 178],
@@ -53,4 +53,38 @@ avg = {}
 for name, numbers in data.items():
     total[name], avg[name] = calc(numbers)
     print("Sum of {} : {} average of {} : {}".format(name,total[name],name,avg[name]))
-     
+
+### Palindrome :-->
+def is_palindrome(s):
+    if s == '':
+        return True
+    if s[0] == s[-1]:
+        return is_palindrome(s[1:-1])
+    return False
+def iter_palindrome(s):
+    for i in range(0, int(len(s)/2)):
+       if s[i] != s[-(i+1)]:
+        return False
+    return True
+
+print(is_palindrome(''))
+print(is_palindrome('a'))
+print(is_palindrome('ab'))
+print(is_palindrome('aba'))
+print(is_palindrome('abba'))
+print(is_palindrome('abcba'))
+
+print(iter_palindrome(''))
+print(iter_palindrome('a'))
+print(iter_palindrome('ab'))
+print(iter_palindrome('aa'))
+print(iter_palindrome('abc'))
+print(iter_palindrome('aba'))
+print(iter_palindrome('abba'))
+""" 
+### Exercise :--> Write a function that will accept any number of numbers and return a list of values:
+
+# The sum  ## Statics, Recursive, Tower of hanoi, Merge and bubble sort.
+# Average
+# Minimum
+# Maximum 
