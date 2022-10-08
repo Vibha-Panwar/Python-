@@ -24,5 +24,12 @@ print(multi(4, 5))
 
 import sys
 print(sys.path)
-"""
+
 ### Flat Project directory Structure:-->
+"""
+### Runtime Loading of modules :-->
+print("Start running")
+
+import mygreet
+mygreet.hello()
+print("Done")
