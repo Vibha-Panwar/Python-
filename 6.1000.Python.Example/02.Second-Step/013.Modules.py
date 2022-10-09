@@ -26,10 +26,33 @@ import sys
 print(sys.path)
 
 ### Flat Project directory Structure:-->
-"""
+
 ### Runtime Loading of modules :-->
 print("Start running")
 
 import mygreet
 mygreet.hello()
 print("Done")
+
+### Conditional loading of modules :-->
+import random
+print("Start running")
+name = input("Your Name: ")
+
+if name == "Foo":
+    import mygreet
+    mygreet.hello()
+else:
+    print("No loading")
+
+print("Done")
+"""
+### Duplicate importing of functions:-->
+from my_calculator import add
+print(add(2, 5))
+
+from my_math import add
+print(add(3, 6))
+
+from my_calculator import multi
+print(multi(5, 8))
