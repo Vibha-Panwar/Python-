@@ -46,13 +46,41 @@ else:
     print("No loading")
 
 print("Done")
-"""
+
 ### Duplicate importing of functions:-->
 from my_calculator import add
 print(add(2, 5))
 
-from my_math import add
-print(add(3, 6))
+#from my_math import add
+#print(add(3, 6))
 
 from my_calculator import multi
 print(multi(5, 8))
+
+
+### Script or Library :-->
+def run():
+    print("run in ",__name__)
+
+print("Name space in Module.py",__name__)
+if __name__ == '__main__':
+    run()
+
+## Script or Library - Import :-->
+# If it is importes by another module then it won't run automatically.
+# We have to call it manually.
+
+### Assert to verify values :-->
+def add(x, y):
+    return x*y
+
+for x, y, z in [(2,2,4), (9,2,18), (2,3,5)]:
+    print(f"add({x}, {y}) == {z}")
+    if add(x, y) != z:
+        raise Exception(f"add{x, y} != {z}")
+"""
+def add(x, y):
+    return x*y
+for x, y, z in [(2, 2, 4), (9, 2, 11), (2, 3, 5)]:
+    print(f"add({x}, {y}) != {z}")
+    assert add(x, y) == z
