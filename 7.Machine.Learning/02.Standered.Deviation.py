@@ -14,3 +14,7 @@ print(x)
 # 4] Now find mean of the square value. you will get the Vaiance.
 
 # Standered Deviation :--> Square root of Variance
+import numpy
+speed = [80,81,82,83,84,85,86]
+x = numpy.std(speed)
+print(x)
