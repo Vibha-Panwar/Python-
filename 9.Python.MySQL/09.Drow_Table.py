@@ -1,5 +1,5 @@
 ## Drop Table :--> means delete complete tables in one go.
-
+"""
 import mysql.connector
 
 mydb = mysql.connector.connect(
@@ -13,7 +13,7 @@ mycursor = mydb.cursor()
 sql = "Drop Table customers"
 mycursor.execute(sql)
 
-
+"""
 ### Drop Table Only If Exits :-->
 import mysql.connector
 
